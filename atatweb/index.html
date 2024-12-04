@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأجير أثاث - خدمات تأجير الأثاث الراقي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>تأجير أثاث</h1>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#categories">المنتجات</a>
+                <a href="#contact">اتصل بنا</a>
+                <button id="registerBtn" class="register-btn">تسجيل</button>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-backdrop"></div>
+
+    <!-- القسم الرئيسي -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">استأجر أثاث منزلك بكل سهولة</h1>
+                <p class="hero-description">نقدم لك مجموعة واسعة من الأثاث الراقي للإيجار بأسعار مناسبة. اختر ما يناسبك من تشكيلتنا المتنوعة من الصالونات، غرف النوم، وطاولات الطعام.</p>
+                <div class="hero-buttons">
+                    <a href="#categories" class="primary-btn">تصفح المنتجات</a>
+                    <a href="#contact" class="secondary-btn">تواصل معنا</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <span>توصيل سريع</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>ضمان الجودة</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>أسعار تنافسية</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="أثاث منزلي فاخر">
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم المنتجات والتصنيفات -->
+    <section id="categories" class="products-section">
+        <div class="container">
+            <h2>منتجاتنا المميزة</h2>
+            
+            <!-- قائمة التصنيفات -->
+            <div class="categories-tabs">
+                <button class="tab-button active" data-category="all">جميع المنتجات</button>
+                <button class="tab-button" data-category="living">صالونات</button>
+                <button class="tab-button" data-category="dining">طاولات طعام</button>
+                <button class="tab-button" data-category="bedroom">غرف نوم</button>
+                <button class="tab-button" data-category="office">أثاث مكتبي</button>
+            </div>
+
+            <!-- شبكة المنتجات -->
+            <div class="products-grid">
+                <!-- صالونات -->
+                <div class="product-card" data-category="living">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc" alt="صالون عصري">
+                        <div class="product-overlay">
+                            <button class="rent-button">احجز الآن</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>صالون عصري فاخر</h3>
+                        <p class="price">3000 دج/يوم</p>
+                        <p class="description">صالون عصري أنيق مثالي للمناسبات والأعراس</p>
+                    </div>
+                </div>
+
+                <!-- طاولات -->
+                <div class="product-card" data-category="dining">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200" alt="طاولة طعام">
+                        <div class="product-overlay">
+                            <button class="rent-button">احجز الآن</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>طاولة طعام فخمة</h3>
+                        <p class="price">2500 دج/يوم</p>
+                        <p class="description">طاولة طعام عصرية تتسع لـ 8 أشخاص</p>
+                    </div>
+                </div>
+
+                <!-- غرف نوم -->
+                <div class="product-card" data-category="bedroom">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c" alt="غرفة نوم">
+                        <div class="product-overlay">
+                            <button class="rent-button">احجز الآن</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>غرفة نوم ملكية</h3>
+                        <p class="price">4000 دج/يوم</p>
+                        <p class="description">غرفة نوم فاخرة مع تصميم عصري</p>
+                    </div>
+                </div>
+
+                <!-- أثاث مكتبي -->
+                <div class="product-card" data-category="office">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="مكتب عصري">
+                        <div class="product-overlay">
+                            <button class="rent-button">احجز الآن</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>مكتب تنفيذي</h3>
+                        <p class="price">2000 دج/يوم</p>
+                        <p class="description">مكتب عصري مع كرسي مريح للعمل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قائمة الحجوزات -->
+    <section id="bookings" class="bookings-section">
+        <div class="container">
+            <h2>حجوزاتي</h2>
+            <div class="bookings-list" id="bookingsList">
+                <!-- سيتم إضافة الحجوزات هنا عن طريق JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الاتصال -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>اتصل بنا</h2>
+                <p>نحن هنا لمساعدتك! راسلنا وسنرد عليك في أقرب وقت ممكن</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>اتصل بنا</h3>
+                        <p>0555-123-456</p>
+                        <p>0666-789-012</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>راسلنا</h3>
+                        <p>info@furniture-rental.com</p>
+                        <p>support@furniture-rental.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <h3>موقعنا</h3>
+                        <p>الجزائر العاصمة، الجزائر</p>
+                        <p>شارع العربي بن مهيدي</p>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">المدينة</label>
+                            <select id="city" required>
+                                <option value="">اختر المدينة</option>
+                                <option value="algiers">الجزائر العاصمة</option>
+                                <option value="oran">وهران</option>
+                                <option value="constantine">قسنطينة</option>
+                                <option value="annaba">عنابة</option>
+                                <option value="setif">سطيف</option>
+                                <option value="batna">باتنة</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">رسالتك</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span>إرسال الرسالة</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الحجز -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>نموذج الحجز</h2>
+                <button class="close-modal" onclick="closeRentModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="product-preview">
+                    <img id="modalProductImage" src="" alt="صورة المنتج">
+                    <div class="product-info">
+                        <h3 id="modalProductName"></h3>
+                        <p id="modalProductPrice" class="price"></p>
+                    </div>
+                </div>
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <label for="rentName">الاسم الكامل</label>
+                        <input type="text" id="rentName" name="rentName" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="rentPhone">رقم الهاتف</label>
+                        <input type="tel" id="rentPhone" name="rentPhone" placeholder="05XXXXXXXX" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="rentDuration">مدة الإيجار (بالأيام)</label>
+                        <input type="number" id="rentDuration" name="rentDuration" min="1" value="1" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="rentDate">تاريخ الاستلام</label>
+                        <input type="date" id="rentDate" name="rentDate" required>
+                    </div>
+                    <div class="price-summary">
+                        <span>السعر الإجمالي:</span>
+                        <span id="totalPrice">0 دج</span>
+                    </div>
+                    <button type="submit" class="submit-btn">تأكيد الحجز</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة التسجيل -->
+    <div class="modal-overlay" id="registerModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>تسجيل حساب جديد</h2>
+                <button class="close-modal" onclick="closeRegisterModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm" class="register-form">
+                    <div class="form-row">
+                        <label for="fullName">الاسم الكامل</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" placeholder="05XXXXXXXX" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">كلمة المرور</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="confirmPassword">تأكيد كلمة المرور</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="city">المدينة</label>
+                        <select id="city" name="city" required>
+                            <option value="">اختر المدينة</option>
+                            <option value="adrar">أدرار</option>
+                            <option value="chlef">الشلف</option>
+                            <option value="laghouat">الأغواط</option>
+                            <option value="oum-el-bouaghi">أم البواقي</option>
+                            <option value="batna">باتنة</option>
+                            <option value="bejaia">بجاية</option>
+                            <option value="biskra">بسكرة</option>
+                            <option value="bechar">بشار</option>
+                            <option value="blida">البليدة</option>
+                            <option value="bouira">البويرة</option>
+                            <option value="tamanrasset">تمنراست</option>
+                            <option value="tebessa">تبسة</option>
+                            <option value="tlemcen">تلمسان</option>
+                            <option value="tiaret">تيارت</option>
+                            <option value="tizi-ouzou">تيزي وزو</option>
+                            <option value="algiers">الجزائر العاصمة</option>
+                            <option value="djelfa">الجلفة</option>
+                            <option value="jijel">جيجل</option>
+                            <option value="setif">سطيف</option>
+                            <option value="saida">سعيدة</option>
+                            <option value="skikda">سكيكدة</option>
+                            <option value="sidi-bel-abbes">سيدي بلعباس</option>
+                            <option value="annaba">عنابة</option>
+                            <option value="guelma">قالمة</option>
+                            <option value="constantine">قسنطينة</option>
+                            <option value="medea">المدية</option>
+                            <option value="mostaganem">مستغانم</option>
+                            <option value="msila">المسيلة</option>
+                            <option value="mascara">معسكر</option>
+                            <option value="ouargla">ورقلة</option>
+                            <option value="oran">وهران</option>
+                            <option value="el-bayadh">البيض</option>
+                            <option value="illizi">إليزي</option>
+                            <option value="bordj-bou-arreridj">برج بوعريريج</option>
+                            <option value="boumerdes">بومرداس</option>
+                            <option value="el-tarf">الطارف</option>
+                            <option value="tindouf">تندوف</option>
+                            <option value="tissemsilt">تيسمسيلت</option>
+                            <option value="el-oued">الوادي</option>
+                            <option value="khenchela">خنشلة</option>
+                            <option value="souk-ahras">سوق أهراس</option>
+                            <option value="tipaza">تيبازة</option>
+                            <option value="mila">ميلة</option>
+                            <option value="ain-defla">عين الدفلى</option>
+                            <option value="naama">النعامة</option>
+                            <option value="ain-temouchent">عين تموشنت</option>
+                            <option value="ghardaia">غرداية</option>
+                            <option value="relizane">غليزان</option>
+                            <option value="timimoun">تيميمون</option>
+                            <option value="bordj-badji-mokhtar">برج باجي مختار</option>
+                            <option value="ouled-djellal">أولاد جلال</option>
+                            <option value="beni-abbes">بني عباس</option>
+                            <option value="in-salah">عين صالح</option>
+                            <option value="in-guezzam">عين قزام</option>
+                            <option value="touggourt">تقرت</option>
+                            <option value="djanet">جانت</option>
+                            <option value="el-meghaier">المغير</option>
+                            <option value="el-meniaa">المنيعة</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">تسجيل الحساب</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-phone"></i> +213 XX XXX XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@furniture-rental.dz</p>
+                </div>
+                <div class="footer-section">
+                    <h3>تابعنا</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 تأجير أثاث. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
